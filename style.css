@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body {
+    margin: 20px auto;
+    width: 700px;
+}
+
+p {
+    padding: 0.5em;
+    border: 1em solid;
+    text-align: center;
+    font-size: 2em;
+}
+
+.linear {    
+    border-image: repeating-linear-gradient(-20deg, hsl(239, 100%, 50%), hsl(225, 78%, 82%), hsl(180, 100%, 50%) 30px) 30;
+}
+
+.radial {    
+    border-image: repeating-radial-gradient(ellipse, hsl(278, 100%, 50%) 0 40px, hsl(0, 7%, 97%) 40px 80px) 30;
+}
+
+.conic {    
+    border-image: conic-gradient(hsl(330, 100%, 71%), hsl(270, 50%, 40%), hsl(240, 44%, 67%), hsl(270, 50%, 40%), hsl(330, 100%, 71%), hsl(270, 50%, 40%), hsl(240, 44%, 67%), hsl(270, 50%, 40%), hsl(330, 100%, 71%)) 30;
+}
