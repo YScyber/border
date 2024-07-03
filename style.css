@@ -12,14 +12,21 @@ p {
     font-size: 2em;
 }
 
-.linear {    
+pre {
+    padding: 0.5em;
+    background-color: #eee;
+    font-size: 2em;
+    overflow: auto;
+}
+
+.linear {
     border-image: repeating-linear-gradient(-20deg, hsl(239, 100%, 50%), hsl(225, 78%, 82%), hsl(180, 100%, 50%) 30px) 30;
 }
 
-.radial {    
+.radial {
     border-image: repeating-radial-gradient(ellipse, hsl(278, 100%, 50%) 0 40px, hsl(0, 7%, 97%) 40px 80px) 30;
 }
 
-.conic {    
+.conic {
     border-image: conic-gradient(hsl(330, 100%, 71%), hsl(270, 50%, 40%), hsl(240, 44%, 67%), hsl(270, 50%, 40%), hsl(330, 100%, 71%), hsl(270, 50%, 40%), hsl(240, 44%, 67%), hsl(270, 50%, 40%), hsl(330, 100%, 71%)) 30;
 }
