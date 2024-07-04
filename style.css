@@ -1,32 +1,49 @@
 @charset "UTF-8";
 body {
+    margin: 0;
+    padding: 0;
+    font: 1.2em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.playable {
+    display: block;
     margin: 20px auto;
-    width: 70%;
-    max-width: 700px;
+    padding: 10px 10px 0px;
+    width: 90%;
+    max-width: 980px;
+    border: none;
+    border-left: 6px solid #55acbb;
+    background-color: #f4f6f8;
+    font-family: monospace;
+    font-weight: bold;
+    color: #4d5053;
+    font-size: 120%;
 }
 
-p {
-    padding: 0.5em;
-    border: 1em solid;
-    text-align: center;
-    font-size: 2em;
+.playable-buttons {
+    margin: 20px auto;
+    padding: 5px 0 5px 26px;
+    width: 90%;
+    max-width: 980px;
+    text-align: right;
+    font-size: 100%;
 }
 
-pre {
-    padding: 0.5em;
-    background-color: #eee;
-    font-size: 2em;
-    overflow: auto;
+.preview {
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 980px;
+    border: 1px solid #4d5053;
+    border-radius: 2px;
 }
 
-.linear {
-    border-image: repeating-linear-gradient(-20deg, hsl(239, 100%, 50%), hsl(225, 78%, 82%), hsl(180, 100%, 50%) 30px) 30;
-}
-
-.radial {
-    border-image: repeating-radial-gradient(ellipse, hsl(278, 100%, 50%) 0 40px, hsl(0, 7%, 97%) 40px 80px) 30;
-}
-
-.conic {
-    border-image: conic-gradient(hsl(330, 100%, 71%), hsl(270, 50%, 40%), hsl(240, 44%, 67%), hsl(270, 50%, 40%), hsl(330, 100%, 71%), hsl(270, 50%, 40%), hsl(240, 44%, 67%), hsl(270, 50%, 40%), hsl(330, 100%, 71%)) 30;
+.preview input {
+    display: block;
+    margin: 5px;
 }
