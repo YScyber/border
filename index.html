@@ -4,11 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Border images</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <style class="editable"></style>
+    <style>
+        p {
+            margin: 0 auto;
+            padding: 0.5em;
+            width: 50%;
+            border: 1em solid;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <p class="linear">線形グラデーションでボーダーを作成</p>
-<pre>
+    <section class="preview"></section>
+    <textarea class="playable playable-html" style="height: 50px;">
+<p class="linear">線形グラデーションでボーダーを作成</p>
+</textarea>
+    <textarea class="playable playable-css" style="height: 260px;">
 .linear {
     border-image: repeating-linear-gradient(
         -20deg,
@@ -16,30 +30,11 @@
         hsl(225, 78%, 82%),
         hsl(180, 100%, 50%) 30px) 30;
 }
-</pre>
-    <p class="radial">放射グラデーションでボーダーを作成</p>
-<pre>
-.radial {    
-    border-image: repeating-radial-gradient(
-        ellipse,
-        hsl(278, 100%, 50%) 0 40px,
-        hsl(0, 7%, 97%) 40px 80px) 30;
-}
-</pre>
-    <p class="conic">扇形グラデーションでボーダーを作成</p>
-<pre>
-.conic {    
-    border-image: conic-gradient(
-        hsl(330, 100%, 71%),
-        hsl(270, 50%, 40%),
-        hsl(240, 44%, 67%),
-        hsl(270, 50%, 40%),
-        hsl(330, 100%, 71%),
-        hsl(270, 50%, 40%),
-        hsl(240, 44%, 67%),
-        hsl(270, 50%, 40%),
-        hsl(330, 100%, 71%)) 30;
-}
-</pre>
+</textarea>
+    <div class="playable-buttons">
+        <input type="button" id="reset" value="リセット" />
+        <input type="button" id="radial" value="放射グラデーションに変更" />
+        <input type="button" id="conic" value="扇形グラデーションに変更" />
+    </div>
 </body>
 </html>
