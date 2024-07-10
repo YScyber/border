@@ -16,7 +16,7 @@ function fillCode() {
 
 const radialHtmlSolution = `<p class="radial">放射グラデーションでボーダーを作成</p>`;
 
-const cssRadial = `.radial {
+const radialCssSolution = `.radial {
     border-image: repeating-radial-gradient(
         ellipse,
         hsl(278, 100%, 50%) 0 40px,
@@ -41,7 +41,7 @@ const cssConic = `.conic {
 `;
 
 let radialHtmlSolutionEntry = radialHtmlSolution;
-let cssRadialEntry = cssRadial;
+let radialCssSolutionEntry = radialCssSolution;
 
 let htmlConicEntry = htmlConic;
 let cssConicEntry = cssConic;
@@ -57,7 +57,7 @@ reset.addEventListener("click", () => {
 radial.addEventListener("click", () => {
     if (radial.value === "放射グラデーションに変更") {
         textareaHTML.value = radialHtmlSolutionEntry;
-        textareaCSS.value = cssRadialEntry;
+        textareaCSS.value = radialCssSolutionEntry;
         radial.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
