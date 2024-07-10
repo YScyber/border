@@ -24,7 +24,7 @@ const radialCssSolution = `.radial {
 }
 `;
 
-const htmlConic = `<p class="conic">扇形グラデーションでボーダーを作成</p>`;
+const conicHtmlSolution = `<p class="conic">扇形グラデーションでボーダーを作成</p>`;
 
 const cssConic = `.conic {
     border-image: conic-gradient(
@@ -43,7 +43,7 @@ const cssConic = `.conic {
 let radialHtmlSolutionEntry = radialHtmlSolution;
 let radialCssSolutionEntry = radialCssSolution;
 
-let htmlConicEntry = htmlConic;
+let conicHtmlSolutionEntry = conicHtmlSolution;
 let cssConicEntry = cssConic;
 
 reset.addEventListener("click", () => {
@@ -69,7 +69,7 @@ radial.addEventListener("click", () => {
 
 conic.addEventListener("click", () => {
     if (conic.value === "扇形グラデーションに変更") {
-        textareaHTML.value = htmlConicEntry;
+        textareaHTML.value = conicHtmlSolutionEntry;
         textareaCSS.value = cssConicEntry;
         conic.value = "元に戻す";
     } else {
