@@ -15,7 +15,6 @@ function fillCode() {
 }
 
 const htmlRadial = `<p class="radial">放射グラデーションでボーダーを作成</p>`;
-const htmlConic = `<p class="conic">扇形グラデーションでボーダーを作成</p>`;
 
 const cssRadial = `.radial {
     border-image: repeating-radial-gradient(
@@ -24,6 +23,9 @@ const cssRadial = `.radial {
         hsl(0, 7%, 97%) 40px 80px) 30;
 }
 `;
+
+const htmlConic = `<p class="conic">扇形グラデーションでボーダーを作成</p>`;
+
 const cssConic = `.conic {
     border-image: conic-gradient(
         hsl(330, 100%, 71%),
