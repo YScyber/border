@@ -41,8 +41,9 @@ const cssConic = `.conic {
 `;
 
 let radialHtmlSolutionEntry = radialHtmlSolution;
-let htmlConicEntry = htmlConic;
 let cssRadialEntry = cssRadial;
+
+let htmlConicEntry = htmlConic;
 let cssConicEntry = cssConic;
 
 reset.addEventListener("click", () => {
