@@ -15,7 +15,6 @@ function fillCode() {
 }
 
 const radialHtmlSolution = `<p class="radial">放射グラデーションでボーダーを作成</p>`;
-
 const radialCssSolution = `.radial {
     border-image: repeating-radial-gradient(
         ellipse,
@@ -25,7 +24,6 @@ const radialCssSolution = `.radial {
 `;
 
 const conicHtmlSolution = `<p class="conic">扇形グラデーションでボーダーを作成</p>`;
-
 const conicCssSolution = `.conic {
     border-image: conic-gradient(
         hsl(330, 100%, 71%),
