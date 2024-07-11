@@ -20,8 +20,7 @@ const radialCssSolution = `.radial {
         ellipse,
         hsl(278, 100%, 50%) 0 40px,
         hsl(0, 7%, 97%) 40px 80px) 30;
-}
-`;
+}`;
 
 const conicHtmlSolution = `<p class="conic">扇形グラデーションでボーダーを作成</p>`;
 const conicCssSolution = `.conic {
@@ -35,8 +34,7 @@ const conicCssSolution = `.conic {
         hsl(240, 44%, 67%),
         hsl(270, 50%, 40%),
         hsl(330, 100%, 71%)) 30;
-}
-`;
+}`;
 
 let radialHtmlSolutionEntry = radialHtmlSolution;
 let radialCssSolutionEntry = radialCssSolution;
