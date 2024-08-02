@@ -15,15 +15,32 @@ function fillCode() {
 }
 
 const radialHtmlSolution = `<p class="radial">放射グラデーションでボーダーを作成</p>`;
-const radialCssSolution = `p.radial {
+const radialCssSolution = `p {
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 50%;
+    border: 1em solid;
+    text-align: center;
+}
+
+p.radial {
     border-image: repeating-radial-gradient(
         ellipse,
         hsl(278, 100%, 50%) 0 40px,
         hsl(0, 7%, 97%) 40px 80px) 30;
-}`;
+}
+`;
 
 const conicHtmlSolution = `<p class="conic">扇形グラデーションでボーダーを作成</p>`;
-const conicCssSolution = `p.conic {
+const conicCssSolution = `p {
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 50%;
+    border: 1em solid;
+    text-align: center;
+}
+
+p.conic {
     border-image: conic-gradient(
         hsl(330, 100%, 71%),
         hsl(270, 50%, 40%),
@@ -34,7 +51,8 @@ const conicCssSolution = `p.conic {
         hsl(240, 44%, 67%),
         hsl(270, 50%, 40%),
         hsl(330, 100%, 71%)) 30;
-}`;
+}
+`;
 
 let radialHtmlSolutionEntry = radialHtmlSolution;
 let radialCssSolutionEntry = radialCssSolution;
