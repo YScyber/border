@@ -10,6 +10,11 @@
 </head>
 <body>
     <section class="preview"></section>
+    <div class="playable-buttons">
+        <input type="button" id="radial" value="放射グラデーションに変更" />
+        <input type="button" id="conic" value="扇形グラデーションに変更" />
+        <input type="button" id="reset" value="リセット" />
+    </div>
     <textarea class="playable playable-html" style="height: 50px;">
 <p class="linear">線形グラデーションでボーダーを作成</p>
 </textarea>
@@ -30,10 +35,5 @@ p.linear {
         hsl(180, 100%, 50%) 30px) 30;
 }
 </textarea>
-    <div class="playable-buttons">
-        <input type="button" id="reset" value="リセット" />
-        <input type="button" id="radial" value="放射グラデーションに変更" />
-        <input type="button" id="conic" value="扇形グラデーションに変更" />
-    </div>
 </body>
 </html>
