@@ -74,10 +74,11 @@ p.conic {
 `;
 
 let linearHtmlSolutionEntry = linearHtmlSolution;
+let linearCssSolutionEntry = linearCssSolution;
+
 let radialHtmlSolutionEntry = radialHtmlSolution;
 let radialCssSolutionEntry = radialCssSolution;
 
-let linearCssSolutionEntry = linearCssSolution;
 let conicHtmlSolutionEntry = conicHtmlSolution;
 let conicCssSolutionEntry = conicCssSolution;
 
