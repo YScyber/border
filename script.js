@@ -45,8 +45,8 @@ const radialCssSolution = `p {
 p.radial {
     border-image: repeating-radial-gradient(
         ellipse,
-        hsl(278, 100%, 50%) 0 40px,
-        hsl(0, 7%, 97%) 40px 80px) 30;
+        hsl(278, 100%, 50%) 0 10px,
+        hsl(0, 7%, 97%) 10px 20px) 10;
 }
 `;
 
