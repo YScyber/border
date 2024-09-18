@@ -3,30 +3,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Border images</title>
+    <title>境界線の画像</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="script.js" type="text/javascript" defer></script>
-    <style class="editable"></style>
 </head>
 <body>
-    <section class="positioning preview"></section>
-    <div class="positioning playable-buttons">
-        <input type="button" id="linear" value="線形グラデーションに変更" />
-        <input type="button" id="radial" value="放射グラデーションに変更" />
-        <input type="button" id="conic" value="扇形グラデーションに変更" />
-        <input type="button" id="reset" value="リセット" />
+    <header>
+        <h1>境界線の画像</h1>
+    </header>
+    <div class="wrapper">
+        <iframe src="linear/index.html" title="線形グラデーションのデモファイル" width="980" height="700" frameborder="0"></iframe>
+        <iframe src="radial/index.html" title="放射グラデーションのデモファイル" width="980" height="700" frameborder="0"></iframe>
+        <iframe src="conic/index.html" title="扇形グラデーションのデモファイル" width="980" height="700" frameborder="0"></iframe>
     </div>
-    <textarea class="positioning playable playable-html" style="height: 50px;">
-<p>グラデーションでボーダーを作成</p>
-</textarea>
-    <textarea class="positioning playable playable-css" style="height: 160px;">
-p {
-    margin: 0 auto;
-    padding: 0.5em;
-    width: 50%;
-    border: 1em solid;
-    text-align: center;
-}
-</textarea>
 </body>
 </html>
