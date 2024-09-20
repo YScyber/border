@@ -21,11 +21,15 @@ p {
     padding: 0.5em;
     width: 50%;
     border: 1em solid;
+    border-image: repeating-linear-gradient(
+        -20deg,
+        hsl(239, 100%, 50%),
+        hsl(225, 78%, 82%),
+        hsl(180, 100%, 50%) 30px) 30;
     text-align: center;
 }
 </textarea>
     <div class="positioning playable-buttons">
-        <input type="button" id="linear" value="線形グラデーションに変更" />
         <input type="button" id="reset" value="リセット" />
     </div>
 </body>
