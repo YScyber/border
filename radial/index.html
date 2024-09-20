@@ -21,11 +21,14 @@ p {
     padding: 0.5em;
     width: 50%;
     border: 1em solid;
+    border-image: repeating-radial-gradient(
+        ellipse,
+        hsl(278, 100%, 50%) 0 10px,
+        hsl(0, 7%, 97%) 10px 20px) 10;
     text-align: center;
 }
 </textarea>
     <div class="positioning playable-buttons">
-        <input type="button" id="radial" value="放射グラデーションに変更" />
         <input type="button" id="reset" value="リセット" />
     </div>
 </body>
