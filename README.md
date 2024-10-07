@@ -7,4 +7,4 @@
 ※ 日本時間 2024/09/18 にリファクタリングしました。
 
 
-[完成ページへ](https://yscyber.github.io/border-images/ "https://yscyber.github.io/border-images/")
+[完成ページへ](https://yscyber.github.io/border/ "https://yscyber.github.io/border/")
