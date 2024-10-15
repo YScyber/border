@@ -55,6 +55,7 @@ h2 {
 ```
 <br>
 
-※ 日本時間 2024/10/15 にリファクタリングしました。<br><br>
+※ 日本時間 2024/10/15 にリファクタリングしました。
+<br><br>
 
 [完成ページへ](https://yscyber.github.io/border/ "https://yscyber.github.io/border/")
