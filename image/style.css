@@ -23,6 +23,13 @@ section.preview {
     padding: 10px;
     border: 1px solid #4d5053;
     border-radius: 2px;
+    background-color: #000;
+}
+
+section.preview h2.border {
+    padding: 0.5em;
+    text-align: center;
+    color: #fff;
 }
 
 textarea.playable {
