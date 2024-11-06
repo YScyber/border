@@ -93,6 +93,7 @@ h2.border {
     border-image: linear-gradient(90deg, #f0f, #abf, #0ff) 1 0 / 25px;
 }
 ```
+<br>
 
 ### 画像
 
