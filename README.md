@@ -42,7 +42,7 @@ section.preview h2.border {
 `border-image`プロパティが表示されなかった場合に備え、`border: 30px solid #fff;`と記述して幅が`30px`の`#fff`（白色）の境界線をあらかじめ指定しています。
 
 ```css
-h2.border {
+section.preview h2.border {
     border: 30px solid #fff;
 }
 ```
@@ -63,7 +63,7 @@ h2.border {
 `border-image-source`プロパティには左辺から`#f0f`（紫色）、`#abf`（青みかかった灰色）、`#0ff`（水色）の順番でグラデーションさせた線を表示しています。
 
 ```css
-h2.border {
+section.preview h2.border {
     border-image-source: linear-gradient(90deg, #f0f, #abf, #0ff);
 }
 ```
@@ -71,7 +71,7 @@ h2.border {
 `border-image-slice`プロパティには省略記述で`1 0`（上下、左右）と指定して上辺と下辺だけを表示させています。
 
 ```css
-h2.border {
+section.preview h2.border {
     border-image-slice: 1 0;
 }
 ```
@@ -79,7 +79,7 @@ h2.border {
 `border-image-width`プロパティには幅が`15px`の線を表示するように指定しています。
 
 ```css
-h2.border {
+section.preview h2.border {
     border-image-width: 15px;
 }
 ```
@@ -89,7 +89,7 @@ h2.border {
 `border-image`プロパティは一括指定することができます。
 
 ```css
-h2.border {
+section.preview h2.border {
     border-image: linear-gradient(90deg, #f0f, #abf, #0ff) 1 0 / 25px;
 }
 ```
@@ -112,7 +112,7 @@ h2.border {
 <img src="image/images/circle.png/" alt="境界線の画像" width="90" />
 
 ```css
-h2.border {
+section.preview h2.border {
     border-image-source: url("images/circle.png");
 }
 ```
@@ -120,7 +120,7 @@ h2.border {
 `border-image-slice`プロパティは上下左右ともに`30`の値で画像（円の模様）をスライスせずに全体を表示させています。
 
 ```css
-h2.border {
+section.preview h2.border {
     border-image-slice: 30;
 }
 ```
@@ -128,7 +128,7 @@ h2.border {
 `border-image-width`プロパティには上下左右ともに幅を`20px`で表示させています。
 
 ```css
-h2.border {
+section.preview h2.border {
     border-image-width: 20px;
 }
 ```
@@ -136,7 +136,7 @@ h2.border {
 `border-image-repeat`プロパティには省略記述で`round stretch`（上下、左右）と指定をして上辺と下辺は円の模様を繰り返し、左辺と右辺は真ん中の円の模様を１つだけ縦に引き延ばしたものを表示させています。
 
 ```css
-h2.border {
+section.preview h2.border {
     border-image-repeat: round stretch;
 }
 ```
@@ -146,7 +146,7 @@ h2.border {
 `border-image`プロパティは一括指定することができます。
 
 ```css
-h2.border {
+section.preview h2.border {
     border-image: url("images/circle.png") 30 / 20px round stretch;
 }
 ```
