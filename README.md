@@ -12,7 +12,7 @@ iframe要素の内容は上から順に以下の通りとなります。
 ボーダーを表示させるためのh2要素のHTMLのコードは以下の通りです。
 
 ```html
-<h2 class="border">...</h2> <!-- "..."は"グラデーション"または"画像"と記述されています -->
+<h2>...</h2> <!-- "..."は"グラデーション"または"画像"と記述されています -->
 ```
 
 #### CSS
@@ -20,18 +20,28 @@ iframe要素の内容は上から順に以下の通りとなります。
 プレビュー画面（section要素）内の背景を`#000`（黒色）に指定しています。
 
 ```css
-section.preview {
+section {
     background-color: #000;
 }
 ```
 
-プレビュー画面（section要素）内にあるテキスト（h2.border要素）には要素内の余白を`0.5em`空けて`text-align: center;`と記述して画面中央に表示させ、色は`#fff`（白色）に指定しています。
+プレビュー画面（section要素）内にあるテキスト（h2要素）には要素内の余白を`0.5em`空けて`text-align: center;`と記述して画面中央に表示させ、色は`#fff`（白色）に指定しています。
 
 ```css
-section.preview h2.border {
+h2 {
     padding: 0.5em;
     text-align: center;
     color: #fff;
+}
+```
+
+アットルールを使用して画面の幅が`699px`以下の場合、textarea要素内に記述されているコードのフォントサイズを`120%`から`100%`へと変更しています。 
+
+```css
+@media screen and (max-width: 699px) {
+    textarea {
+        font-size: 100%;
+    }
 }
 ```
 
@@ -42,7 +52,7 @@ section.preview h2.border {
 `border-image`プロパティが表示されなかった場合に備え、`border: 30px solid #fff;`と記述して幅が`30px`の`#fff`（白色）の境界線をあらかじめ指定しています。
 
 ```css
-section.preview h2.border {
+h2 {
     border: 30px solid #fff;
 }
 ```
@@ -55,7 +65,7 @@ section.preview h2.border {
 ボーダーを表示させるためのh2要素です。
 
 ```html
-<h2 class="border">グラデーション</h2>
+<h2>グラデーション</h2>
 ```
 
 #### CSS
@@ -63,7 +73,7 @@ section.preview h2.border {
 `border-image-source`プロパティには左辺から`#f0f`（紫色）、`#abf`（青みかかった灰色）、`#0ff`（水色）の順番でグラデーションさせた線を表示しています。
 
 ```css
-section.preview h2.border {
+h2 {
     border-image-source: linear-gradient(90deg, #f0f, #abf, #0ff);
 }
 ```
@@ -71,7 +81,7 @@ section.preview h2.border {
 `border-image-slice`プロパティには省略記述で`1 0`（上下、左右）と指定して上辺と下辺だけを表示させています。
 
 ```css
-section.preview h2.border {
+h2 {
     border-image-slice: 1 0;
 }
 ```
@@ -79,7 +89,7 @@ section.preview h2.border {
 `border-image-width`プロパティには幅が`15px`の線を表示するように指定しています。
 
 ```css
-section.preview h2.border {
+h2 {
     border-image-width: 15px;
 }
 ```
@@ -89,7 +99,7 @@ section.preview h2.border {
 `border-image`プロパティは一括指定することができます。
 
 ```css
-section.preview h2.border {
+h2 {
     border-image: linear-gradient(90deg, #f0f, #abf, #0ff) 1 0 / 25px;
 }
 ```
@@ -102,7 +112,7 @@ section.preview h2.border {
 ボーダーを表示させるためのh2要素です。
 
 ```html
-<h2 class="border">画像</h2>
+<h2>画像</h2>
 ```
 
 #### CSS
@@ -112,7 +122,7 @@ section.preview h2.border {
 <img src="image/images/circle.png/" alt="境界線の画像" width="90" />
 
 ```css
-section.preview h2.border {
+h2 {
     border-image-source: url("images/circle.png");
 }
 ```
@@ -120,7 +130,7 @@ section.preview h2.border {
 `border-image-slice`プロパティは上下左右ともに`30`の値で画像（円の模様）をスライスせずに全体を表示させています。
 
 ```css
-section.preview h2.border {
+h2 {
     border-image-slice: 30;
 }
 ```
@@ -128,7 +138,7 @@ section.preview h2.border {
 `border-image-width`プロパティには上下左右ともに幅を`20px`で表示させています。
 
 ```css
-section.preview h2.border {
+h2 {
     border-image-width: 20px;
 }
 ```
@@ -136,7 +146,7 @@ section.preview h2.border {
 `border-image-repeat`プロパティには省略記述で`round stretch`（上下、左右）と指定をして上辺と下辺は円の模様を繰り返し、左辺と右辺は真ん中の円の模様を１つだけ縦に引き延ばしたものを表示させています。
 
 ```css
-section.preview h2.border {
+h2 {
     border-image-repeat: round stretch;
 }
 ```
@@ -146,13 +156,13 @@ section.preview h2.border {
 `border-image`プロパティは一括指定することができます。
 
 ```css
-section.preview h2.border {
+h2 {
     border-image: url("images/circle.png") 30 / 20px round stretch;
 }
 ```
 <br>
 
-※ 日本時間 2024/10/15 にリファクタリングしました。
+※ 日本時間 2024/12/05 に変更しました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/border/ "https://yscyber.github.io/border/")
