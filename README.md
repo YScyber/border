@@ -175,7 +175,7 @@ h2 {
 ```
 <br>
 
-※ 日本時間 2024/12/18 に変更しました。
+※ 日本時間 2024/12/18 に変更を加えました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/border/ "https://yscyber.github.io/border/")
