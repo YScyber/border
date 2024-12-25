@@ -116,7 +116,6 @@ h2 {
     border-image: linear-gradient(90deg, #f0f, #abf, #0ff) 1 0 / 25px;
 }
 ```
-<br>
 
 [ソースコードの参照ページへ](gradation/index.html "gradation/index.html")
 <br>
@@ -176,7 +175,6 @@ h2 {
     border-image: url("images/circle.png") 30 / 20px round stretch;
 }
 ```
-<br>
 
 [ソースコードの参照ページへ](image/index.html "image/index.html")
 <br>
