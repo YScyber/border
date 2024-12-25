@@ -118,6 +118,9 @@ h2 {
 ```
 <br>
 
+[ソースコードの参照ページへ](gradation/index.html "gradation/index.html")
+<br>
+
 ## 画像
 
 ### HTML
@@ -175,7 +178,10 @@ h2 {
 ```
 <br>
 
-※ 日本時間 2024/12/18 に変更を加えました。
+[ソースコードの参照ページへ](image/index.html "image/index.html")
+<br>
+
+※ 日本時間 2024/12/25 に変更を加えました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/border/ "https://yscyber.github.io/border/")
