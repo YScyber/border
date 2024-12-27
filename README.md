@@ -14,7 +14,7 @@
     - CSSコードが記述されています。
 - リセットボタン（`input`要素）
     - textarea要素内に記述されているコードの変更を初期値（読み込まれた最初の状態）に戻すためのボタンです。
-<br>
+<br><br>
 
 ## 共通設定
 
@@ -59,6 +59,7 @@ h2 {
 ```
 
 これらのCSSの共通設定は、各ディレクトリ内にある`style.css`ファイルに記述しています。
+<br><br>
 
 ## 予備
 
@@ -75,7 +76,7 @@ h2 {
 
 ### HTML
 
-ボーダーを表示させるためのh2要素です。
+**グラデーション**を使用して表示させるためのh2要素です。
 
 ```html
 <h2>グラデーション</h2>
@@ -116,15 +117,16 @@ h2 {
     border-image: linear-gradient(90deg, #f0f, #abf, #0ff) 1 0 / 25px;
 }
 ```
+<br>
 
 [ソースコードの参照ページへ](gradation/index.html "gradation/index.html")
-<br>
+<br><br>
 
 ## 画像
 
 ### HTML
 
-ボーダーを表示させるためのh2要素です。
+**画像**を使用して表示させるためのh2要素です。
 
 ```html
 <h2>画像</h2>
@@ -175,11 +177,12 @@ h2 {
     border-image: url("images/circle.png") 30 / 20px round stretch;
 }
 ```
-
-[ソースコードの参照ページへ](image/index.html "image/index.html")
 <br>
 
-※ 日本時間 2024/12/25 に変更を加えました。
+[ソースコードの参照ページへ](image/index.html "image/index.html")
+<br><br>
+
+※ 日本時間 2024/12/27 に変更を加えました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/border/ "https://yscyber.github.io/border/")
